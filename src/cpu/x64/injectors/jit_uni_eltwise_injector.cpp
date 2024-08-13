@@ -19,8 +19,8 @@
 #include "common/nstl.hpp"
 #include "common/utils.hpp"
 
+#include <iostream>
 #include "cpu/x64/injectors/jit_uni_eltwise_injector.hpp"
-
 namespace dnnl {
 namespace impl {
 namespace cpu {

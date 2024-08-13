@@ -1966,7 +1966,7 @@ template <cpu_isa_t isa, typename Wmm>
 bool jit_uni_eltwise_injector_f32<isa, Wmm>::need_mask_register(
         alg_kind_t alg, bool is_fwd, float alpha) {
     if (is_superset(isa, avx512_core)) return false;
-
+    std::cout << "alg in need_mask_register is " << alg << std::endl;
     using namespace alg_kind;
     if (is_fwd) {
         switch (alg) {
